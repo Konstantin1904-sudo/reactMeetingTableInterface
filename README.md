@@ -9,6 +9,6 @@ Dieses Repo ist eine Weiterfürung dieses Repos: https://github.com/Konstantin19
 
 Um den Development Modus zu starten:
 
-'''
- npm start dev
- '''
+```
+npm start dev
+```
