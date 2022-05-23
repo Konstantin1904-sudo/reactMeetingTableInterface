@@ -12,3 +12,12 @@ Um den Development Modus zu starten:
 ```
 npm start dev
 ```
+
+Dieses Projekt soll ein einfach zu bedienendes Interface für einen Meeting Tisch sein.
+
+Die Enthaltenen Frameworks sind:
+
+* React.js
+* Material UI
+* React-router-dom
+  
