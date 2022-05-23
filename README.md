@@ -7,3 +7,8 @@ Im Rahmen des Praxisprojekt von Code and Context
 
 Dieses Repo ist eine Weiterfürung dieses Repos: https://github.com/Konstantin1904-sudo/GalleryTableUI
 
+Um den Development Modus zu starten:
+
+'''
+ npm start dev
+ '''
