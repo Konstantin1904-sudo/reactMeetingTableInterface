@@ -1,0 +1,260 @@
+/* welcome Page */
+
+:root{
+    --welcomeWidth: 940px;
+}
+
+.welcomeWrapper{
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+
+    height: 100vh;
+    width: 100vw;
+
+    padding-top: 0;
+}
+
+.welcomeButton{
+
+    display: flex;
+
+    flex-grow: 0;
+    height: var(--welcomeHeight);
+    width: var(--welcomeWidth);
+
+    align-self: center;
+    justify-self: center;
+
+}
+
+.welcomeHelp{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+/* Page Styling */
+
+.sliderPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+
+    width: 100vw;
+    height: 1300px;
+
+}
+
+.nonSliderPage{
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100vw;
+    height: 1400px;
+
+    flex-direction: column;
+}
+
+.blindsWrapper{
+
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    justify-content: space-evenly;
+
+    width: 100vw;
+    height: 1500px;
+
+}
+
+/* Button Styling */
+
+.buttonWrapper{
+    display: flex;
+    flex-direction: column;
+
+    width: 1200px;
+    height: 800px;
+    font-familiy: teleNeo;
+
+    justify-content: space-around;
+
+    padding-right: 500px;
+
+
+}
+
+.defaultButton{
+    border: none;
+
+    background-color: transparent;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.buttonIcon{
+    padding-left: 250px;
+
+}
+
+.arrow{
+
+    padding: 20px;
+
+
+}
+
+/*Slider Styling */
+
+.sliderWrapper{
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    transform: scale(2);
+
+
+}
+
+.sliderButton{
+
+    border: none;
+
+    background-color: transparent;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+}
+
+.sliderIcon{
+    
+}
+
+/* Switch styling */
+
+.switchWrapper{
+
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.switchButton{
+    transform: scale(3);
+
+    padding-right: 20px;
+
+}
+
+/* Text Styling */
+
+@font-face {
+    font-familiy: teleNeo;
+    src: url(https://www.brand-design.telekom.com/asset/font-0-teleneo/);
+}
+
+
+.buttonText{
+    
+    font-familiy: teleNeo;
+
+    color: black;
+
+    font-size: 45px;
+    margin: auto;
+
+
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+.defaultText{
+    font-familiy: teleNeo;
+
+    font-size: 50px;
+
+    padding: 30px;
+
+}
+
+/* Background Images */
+.wrapperLightBackground{
+    background-image: url("./assets/backgroundImages/Light.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    /* making it 100% of the total width and height */ 
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.wrapperSoundBackground{
+    background-image: url("./assets/backgroundImages/Sound.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    /* making it 100% of the total width and height */ 
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.wrapperVideoBackground{
+    background-image: url("./assets/backgroundImages/Video.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    /* making it 100% of the total width and height */ 
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.wrapperBlindsBackground{
+    background-image: url("./assets/backgroundImages/Blinds.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    /* making it 100% of the total width and height */ 
+    height: 100vh;
+    width: 100vw;
+
+}

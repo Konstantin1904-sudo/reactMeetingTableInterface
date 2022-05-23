@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 896 896" style="enable-background:new 0 0 896 896;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FDDBA9;}
+	.st1{font-family:'TeleNeo-Medium';}
+	.st2{font-size:80px;}
+	.st3{fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;}
+	.st4{fill:none;stroke:#000000;stroke-width:8;}
+</style>
+<g id="Galaxy-S8_x2B_">
+	<g id="Start" transform="translate(-1462.000000, -999.000000)">
+		<g id="Binds" transform="translate(1462.000000, 999.000000)">
+			<circle id="Oval" class="st0" cx="448" cy="448" r="448"/>
+			<text transform="matrix(1 0 0 1 206.1664 567.4789)" class="st1 st2">Blinds controls</text>
+			<g id="icons_x2F_custom_x2F_blinds" transform="translate(364.000000, 193.000000)">
+				<line id="Path" class="st3" x1="-4.1" y1="62.6" x2="160.5" y2="62.6"/>
+				<path id="Rectangle" class="st4" d="M-3.1,84.2h162.6c0.6,0,1,0.4,1,1v25c0,0.6-0.4,1-1,1H-3.1c-0.6,0-1-0.4-1-1v-25
+					C-4.1,84.6-3.6,84.2-3.1,84.2z"/>
+				<path id="Rectangle_00000063591126550107488790000006597176285044635522_" class="st4" d="M-4.4,132.7h162.6c0.6,0,1,0.4,1,1v25
+					c0,0.6-0.4,1-1,1H-4.4c-0.6,0-1-0.4-1-1v-25C-5.4,133.2-5,132.7-4.4,132.7z"/>
+				<path id="Rectangle_00000114788185856835983240000017652516415453338539_" class="st4" d="M-4.4,178.6h162.6c0.6,0,1,0.4,1,1v25
+					c0,0.6-0.4,1-1,1H-4.4c-0.6,0-1-0.4-1-1v-25C-5.4,179.1-5,178.6-4.4,178.6z"/>
+				<line id="Path_00000113341559470631789670000003379229069742136477_" class="st4" x1="22.9" y1="65.3" x2="22.9" y2="84.2"/>
+				<line id="Path_00000109023605812163750240000012623618244730172078_" class="st4" x1="22.9" y1="113.9" x2="22.9" y2="130"/>
+				<line id="Path_00000138560678992376627170000016142923386628292242_" class="st4" x1="22.9" y1="159.7" x2="22.9" y2="175.9"/>
+				<line id="Path_00000045583863235323623530000003117019233441100436_" class="st4" x1="130.8" y1="62.6" x2="130.8" y2="84.2"/>
+				<line id="Path_00000049928749483864355310000006688993046139749547_" class="st4" x1="130.8" y1="113.9" x2="130.8" y2="130"/>
+				
+					<line id="Path_00000057126913188668257500000001975686999453813148_" class="st4" x1="130.8" y1="159.7" x2="130.8" y2="175.9"/>
+				<line id="Path_00000068671227857832603450000015722410904143416194_" class="st4" x1="130.8" y1="205.6" x2="130.8" y2="238"/>
+				<circle id="Oval_00000121280858209983491510000014007090498896252302_" class="st4" cx="130.8" cy="247.4" r="9.4"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

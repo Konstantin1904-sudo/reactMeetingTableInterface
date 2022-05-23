@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+:root{
+  --welcomeHeight: 820px;
+  --welcomeWidth: 950px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcomeWrapper{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  height: 100vh;
+  width: 100vw;
+
+  padding-top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.welcomeLight{
+  background-image: url("./assets/LightButton.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: var(--welcomeHeight);
+  width: var(--welcomeWidth);
+}
+.welcomeVideo{
+  background-image: url("./assets/VideoButton.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: var(--welcomeHeight);
+  width: var(--welcomeWidth);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcomeSound{
+  background-image: url("./assets/SoundButton.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: var(--welcomeHeight);
+  width: var(--welcomeWidth);
+}
+
+.welcomeBlinds{
+  background-image: url("./assets/BlindsButton.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: var(--welcomeHeight);
+  width: var(--welcomeWidth);
+}
+
+.wrapperLightBackground{
+  
 }
