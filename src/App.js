@@ -27,10 +27,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="light" element={<Light/>}/>
-        <Route path="video" element={<Video/>}/>
-        <Route path="sound" element={<Sound/>}/>
-        <Route path="blinds" element={<Blinds/>}/>
+        <Route path="light" element={<Light />} />
+        <Route path="video" element={<Video />} />
+        <Route path="sound" element={<Sound />} />
+        <Route path="blinds" element={<Blinds />} />
       </Routes>
     </div>
   );
@@ -41,17 +41,17 @@ export default App;
 function Home() {
 
   const [firstModalIsOpen, setFirstModalOpen] = React.useState(false);
-  
+
   function openFirstModal() {
     setFirstModalOpen(true);
   }
 
   function closeFirstModal() {
     setFirstModalOpen(false);
-  }  
-  
+  }
+
   const [secondModalIsOpen, setSecondModalOpen] = React.useState(false);
-  
+
   function openSecondModal() {
     setSecondModalOpen(true);
   }
@@ -61,7 +61,7 @@ function Home() {
   }
 
   const [backgroundModalIsOpen, setBackgroundModalOpen] = React.useState(false);
-  
+
   function openBackgroundModal() {
     setBackgroundModalOpen(true);
   }
@@ -70,12 +70,12 @@ function Home() {
     setBackgroundModalOpen(false);
   }
 
-  function startModalDialogue(){
+  function startModalDialogue() {
     openFirstModal();
     openBackgroundModal();
   }
 
-  function handleNeedHelp(){
+  function handleNeedHelp() {
     closeFirstModal();
     openSecondModal();
 
@@ -83,7 +83,7 @@ function Home() {
   }
 
 
-  function closeAllModals(){
+  function closeAllModals() {
     closeFirstModal();
     closeSecondModal();
     closeBackgroundModal();
@@ -97,67 +97,67 @@ function Home() {
 
         <div className={styles.welcomeWrapper}>
 
-        <Link to="/light" className={styles.welcomeButton}><img src={lightButton} alt={'Light Button'}/></Link>
-        <Link to="/video" className={styles.welcomeButton}><img src={videoButton} alt={'Video Button'}/></Link>
-        <Link to="/sound" className={styles.welcomeButton}><img src={soundButton} alt={'Sound Button'}/></Link>
-        <Link to="/blinds" className={styles.welcomeButton}><img src={blindsButton} alt={'Blinds Button'}/></Link>
+          <Link to="/light" className={styles.welcomeButton}><img src={lightButton} alt={'Light Button'} /></Link>
+          <Link to="/video" className={styles.welcomeButton}><img src={videoButton} alt={'Video Button'} /></Link>
+          <Link to="/sound" className={styles.welcomeButton}><img src={soundButton} alt={'Sound Button'} /></Link>
+          <Link to="/blinds" className={styles.welcomeButton}><img src={blindsButton} alt={'Blinds Button'} /></Link>
 
-        <button className={styles.defaultButton} onClick={startModalDialogue}><img src={helpbutton} alt={'helpButton'} className={styles.welcomeHelp}/></button>
+          <button className={styles.defaultButton} onClick={startModalDialogue}><img src={helpbutton} alt={'helpButton'} className={styles.welcomeHelp} /></button>
 
-        <Modal
-                isOpen={backgroundModalIsOpen}
-                onRequestClose={closeBackgroundModal}
-                contentLabel="Background Modal"
-                ariaHideApp={false}
-                className={styles.modalBackground}
-                >
-            </Modal>
-                <Modal
-                isOpen={firstModalIsOpen}
-                onRequestClose={closeFirstModal}
-                contentLabel="Help Modal 1"
-                ariaHideApp={false}
-                className={styles.modalStyling}
-                >
+          <Modal
+            isOpen={backgroundModalIsOpen}
+            onRequestClose={closeBackgroundModal}
+            contentLabel="Background Modal"
+            ariaHideApp={false}
+            className={styles.modalBackground}
+          >
+          </Modal>
+          <Modal
+            isOpen={firstModalIsOpen}
+            onRequestClose={closeFirstModal}
+            contentLabel="Help Modal 1"
+            ariaHideApp={false}
+            className={styles.modalStyling}
+          >
 
-                <div className={styles.modalTextWrapper}>
-                    <div className={styles.modalText}>Do you need help from a member of the technical team?</div>
-                    <div className={styles.modalSmallText}>Brauchen Sie Hilfe von einem Mitarbeiter aus dem technischen Team?</div>
+            <div className={styles.modalTextWrapper}>
+              <div className={styles.modalText}>Do you need help from a member of the technical team?</div>
+              <div className={styles.modalSmallText}>Brauchen Sie Hilfe von einem Mitarbeiter aus dem technischen Team?</div>
 
-                </div>
+            </div>
 
-                <div className={styles.modalButtonWrapper}>
+            <div className={styles.modalButtonWrapper}>
 
-                    <button onClick={handleNeedHelp} className={styles.modalButtonPrimary}>Yes</button>
-                    <button onClick={closeAllModals} className={styles.modalButtonSecondary}>No</button>
+              <button onClick={handleNeedHelp} className={styles.modalButtonPrimary}>Yes</button>
+              <button onClick={closeAllModals} className={styles.modalButtonSecondary}>No</button>
 
-                </div>
+            </div>
 
-            </Modal>
+          </Modal>
 
-                <Modal
-                isOpen={secondModalIsOpen}
-                onRequestClose={closeSecondModal}
-                contentLabel="Help Modal 1"
-                ariaHideApp={false}
-                className={styles.modalStyling}
-                >
+          <Modal
+            isOpen={secondModalIsOpen}
+            onRequestClose={closeSecondModal}
+            contentLabel="Help Modal 1"
+            ariaHideApp={false}
+            className={styles.modalStyling}
+          >
 
-                <div className={styles.modalTextWrapper}>
-                    <div className={styles.modalText}>A member of the technical team will be with you shortly.</div>
-                    <div className={styles.modalSmallText}>Ein Mitarbeiter aus dem technischen Team wird in Kürze bei Ihnen sein.</div>
+            <div className={styles.modalTextWrapper}>
+              <div className={styles.modalText}>A member of the technical team will be with you shortly.</div>
+              <div className={styles.modalSmallText}>Ein Mitarbeiter aus dem technischen Team wird in Kürze bei Ihnen sein.</div>
 
-                </div>
+            </div>
 
-                <div className={styles.modalButtonWrapper}>
+            <div className={styles.modalButtonWrapper}>
 
-                    <button onClick={closeAllModals} className={styles.modalButtonPrimary}>Okay</button>
+              <button onClick={closeAllModals} className={styles.modalButtonPrimary}>Okay</button>
 
-                </div>
+            </div>
 
-            </Modal>
+          </Modal>
 
-          </div>
+        </div>
 
       </main>
 
