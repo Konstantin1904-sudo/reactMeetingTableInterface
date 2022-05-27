@@ -4,9 +4,9 @@ import {Link} from "react-router-dom";
 import styles from '../styles.module.css'
 
 import arrowToGoBack from '../assets/icons/BackArrow.svg'
-import arrowUp from '../assets/icons/ArrowUp.svg'
-import arrowDown from '../assets/icons/ArrowDown.svg'
-import minus from '../assets/icons/Minus.svg'
+import arrowUp from '../assets/icons/ArrowUpCircle.svg'
+import arrowDown from '../assets/icons/ArrowDownCircle.svg'
+import minus from '../assets/icons/MinusCircle.svg'
 
 
 function Blinds(){

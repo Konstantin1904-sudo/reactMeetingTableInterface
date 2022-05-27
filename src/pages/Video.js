@@ -6,9 +6,9 @@ import styles from '../styles.module.css'
 
 import arrowToGoBack from '../assets/icons/BackArrow.svg'
 import webexLogo from '../assets/icons/Webex.svg'
-import idleIcon from '../assets/icons/Idle.svg'
-import hdmiIcon from '../assets/icons/HDMI.svg'
-import clickshareIcon from '../assets/icons/Clickshare.svg'
+import idleIcon from '../assets/icons/IdleCircle.svg'
+import hdmiIcon from '../assets/icons/HDMICircle.svg'
+import clickshareIcon from '../assets/icons/ClickshareCircle.svg'
 
 import { Switch } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';

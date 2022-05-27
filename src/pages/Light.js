@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import styles from '../styles.module.css'
 
 import arrowToGoBack from '../assets/icons/BackArrow.svg'
-import lowIcon from '../assets/icons/low.svg'
-import mediumIcon from '../assets/icons/medium.svg'
-import highIcon from '../assets/icons/high.svg'
+import lowIcon from '../assets/icons/LowCircle.svg'
+import mediumIcon from '../assets/icons/MediumCircle.svg'
+import highIcon from '../assets/icons/HighCircle.svg'
 import brightnessIcon from '../assets/icons/Brightness.svg'
 
 import { Slider } from '@mui/material';

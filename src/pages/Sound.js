@@ -5,8 +5,8 @@ import styles from '../styles.module.css'
 
 import arrowToGoBack from '../assets/icons/BackArrow.svg'
 
-import soundIcon from '../assets/icons/Sound.svg'
-import telekomIcon from '../assets/icons/TelekomLogo.svg'
+import soundIcon from '../assets/icons/SoundCircle.svg'
+import telekomIcon from '../assets/icons/TelekomLogoCircle.svg'
 import muteIcon from '../assets/icons/Mute.svg'
 
 import {Slider} from '@mui/material';
