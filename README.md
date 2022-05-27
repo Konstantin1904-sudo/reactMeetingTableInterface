@@ -20,4 +20,5 @@ Die Enthaltenen Frameworks sind:
 * React.js
 * Material UI
 * React-router-dom
+* react-modal
   
