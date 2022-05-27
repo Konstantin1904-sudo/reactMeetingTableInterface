@@ -22,7 +22,6 @@ import Blinds from './pages/Blinds.js'
 
 function App() {
 
-
   return (
     <div className="App">
       <Routes>
