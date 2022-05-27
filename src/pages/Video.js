@@ -29,15 +29,35 @@ const magentaTheme = createTheme({
 
 function Video(){
 
+    const [checked, setChecked] = React.useState(false);
+      
+    const handleSwitchChange = (event) => {
+
+      setChecked(event.target.checked);
+
+      if(event.target.checked){
+          console.log("Call Api: Activate Webex")
+      }else{
+        console.log("Call Api: Deactivate Webex")
+      }
+    };
+    
     return(
-<main className={styles.wrapperVideoBackground}>
+        <main className={styles.wrapperVideoBackground}>
             <title>SoundSettings</title>
             <Link to="/"><img src = {arrowToGoBack} alt = "Load failed"  height="100" className={styles.arrow}/></Link>
+
             <div className={styles.nonSliderPage}>
                 <div className={styles.switchWrapper}>
                     <ThemeProvider theme={magentaTheme}>
                         <div className={styles.switchButton}>
-                            <Switch {...label} color = "primary"/>
+                            <Switch 
+                            {...label} 
+                            color = "primary"
+                            checked={checked}
+                            onChange={handleSwitchChange}
+                            inputProps={{ 'aria-label': 'controlled' }}
+                            />
                         </div>
 
                     </ThemeProvider>
