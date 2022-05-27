@@ -25,6 +25,14 @@ const blackTheme = createTheme({
 
 function Sound(){
 
+    const [sliderValue, setSliderValue] = React.useState(30);
+
+    const handleSliderChange = (event, newSliderValue) => {
+      setSliderValue(newSliderValue);
+
+      console.log("Make Api Call to Change Volume to: " + newSliderValue)
+    };
+
     return(
       <main className={styles.wrapperSoundBackground}>
           <title>LightSettings</title>
@@ -48,6 +56,8 @@ function Sound(){
                           orientation = 'vertical'
                           size = 'large'
                           defaultValue = {55}
+                          value={sliderValue}
+                          onChange={handleSliderChange}
                       />
                   </ThemeProvider>
                   <button className={styles.sliderButton}><img src = {muteIcon} alt = "Load failed" width="40"  className={styles.sliderIcon}/></button>
