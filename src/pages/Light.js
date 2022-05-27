@@ -28,7 +28,7 @@ function Light(){
     return(
       <main className={styles.wrapperLightBackground}>
           <title>LightSettings</title>
-          <Link to="/"><img src = {arrowToGoBack} alt = "Load failed"  height="100" className={styles.arrow}/></Link>
+          <Link to="/"><img src = {arrowToGoBack} alt = "Load failed" width="100" height="100" className={styles.arrow}/></Link>
   
           <div className={styles.sliderPage}>
               <div className={styles.buttonWrapper}> 

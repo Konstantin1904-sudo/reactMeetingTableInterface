@@ -14,7 +14,7 @@ function Blinds(){
     return(
 <main className={styles.wrapperBlindsBackground}>
             <title>SoundSettings</title>
-            <Link to="/"><img src = {arrowToGoBack} alt = "Load failed"  height="100" className={styles.arrow}/></Link>
+            <Link to="/"><img src = {arrowToGoBack} alt = "Load failed" width="100" height="100" className={styles.arrow}/></Link>
             <div className={styles.blindsWrapper}> 
                         <button className={styles.defaultButton}>
                             <img src = {arrowUp}x alt = "Load failed" width="300" height="300" />
