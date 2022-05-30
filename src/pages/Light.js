@@ -1,7 +1,11 @@
 import * as React from "react";
+import { useState } from 'react';
+
 import { Link } from "react-router-dom";
 
 import styles from '../styles.module.css'
+
+import CustomButton from '../assets/components/CustomButton.js'
 
 import arrowToGoBack from '../assets/icons/BackArrow.svg'
 import lowIcon from '../assets/icons/LowCircle.svg'
@@ -33,6 +37,18 @@ function Light() {
         console.log("Make Api Call to Change Brightness to: " + newSliderValue)
     };
 
+    function workingAndMeetingPressed(){
+        console.log("Activate Working and Meeting Preset")
+
+        setWorkingAndMeetingState('activeButton')
+    }
+
+
+    const [workingAndMeetingState, setWorkingAndMeetingState] = useState('defaultButton');
+
+
+
+
     return (
         <main className={styles.wrapperLightBackground}>
             <title>LightSettings</title>
@@ -40,18 +56,9 @@ function Light() {
 
             <div className={styles.sliderPage}>
                 <div className={styles.buttonWrapper}>
-                    <button className={styles.defaultButton}>
-                        <img src={lowIcon} alt="Load failed" width="150" height="150" className={styles.buttonIcon} />
-                        <span className={styles.buttonText}>Working & meeting</span>
-                    </button>
-                    <button className={styles.defaultButton}>
-                        <img src={mediumIcon} alt="Load failed" width="150" height="150" className={styles.buttonIcon} />
-                        <span className={styles.buttonText}>Video conference</span>
-                    </button>
-                    <button className={styles.defaultButton}>
-                        <img src={highIcon} alt="Load failed" width="150" height="150" className={styles.buttonIcon} />
-                        <span className={styles.buttonText}>Movie setup</span>
-                    </button>
+                    <CustomButton active={true} icon={lowIcon} buttonName="Working & Meeting"/>
+                    <CustomButton active={false} icon={mediumIcon} buttonName="Video conference"/>
+                    <CustomButton active={false} icon={highIcon} buttonName="Movie setup"/>
                 </div>
                 <div className={styles.sliderWrapper}>
                     <ThemeProvider theme={greenTheme}>
