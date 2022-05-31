@@ -13,14 +13,24 @@ import minus from '../assets/icons/MinusCircle.svg'
 
 function Blinds() {
 
+    function blindsUp(){
+        console.log("call Api to raise blinds")
+    }
+    function blindsStop(){
+        console.log("call Api to stop blinds")
+    }
+    function blindsDown(){
+        console.log("call Api to lower blinds")
+    }
+
     return (
         <main className={styles.wrapperBlindsBackground}>
             <title>SoundSettings</title>
             <Link to="/"><img src={arrowToGoBack} alt="Load failed" width="100" height="100" className={styles.arrow} /></Link>
             <div className={styles.blindsWrapper}>
-                <ButtonWithClickAnimation icon={arrowUp} width={300} height={300}/>
-                <ButtonWithClickAnimation icon={minus} width={300} height={300}/>
-                <ButtonWithClickAnimation icon={arrowDown} width={300} height={300}/>
+                <ButtonWithClickAnimation clickHandler={blindsUp} icon={arrowUp} width={300} height={300}/>
+                <ButtonWithClickAnimation clickHandler={blindsStop} icon={minus} width={300} height={300}/>
+                <ButtonWithClickAnimation clickHandler={blindsDown} icon={arrowDown} width={300} height={300}/>
             </div>
         </main>
     )
