@@ -68,7 +68,6 @@
 }
 
 .blindsWrapper{
-
     display: flex;
     flex-direction: column;
 
@@ -137,6 +136,15 @@
 .arrow{
     padding: 60px;
 }
+
+.activeBlindsIcon{
+    filter: invert(14%) sepia(98%) saturate(6596%) hue-rotate(322deg) brightness(88%) contrast(102%);
+
+}
+
+.inActiveBlindsButton{
+}
+
 
 /*Slider Styling */
 
