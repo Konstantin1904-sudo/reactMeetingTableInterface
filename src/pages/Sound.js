@@ -44,6 +44,12 @@ function Sound() {
         console.log("make Api Call to toggle Ambient Sound")
     }
 
+    
+    function muteButtonPressed(){
+        console.log("Make Api Call to mute Sound")
+        setSliderValue(0);
+    }
+
     return (
         <main className={styles.wrapperSoundBackground}>
             <title>LightSettings</title>
@@ -65,7 +71,7 @@ function Sound() {
                             onChange={handleSliderChange}
                         />
                     </ThemeProvider>
-                    <button className={styles.sliderButton}><img src={muteIcon} alt="Load failed" width="40" className={styles.sliderIcon} /></button>
+                    <button className={styles.sliderButton} onClick={muteButtonPressed}><img src={muteIcon} alt="Load failed" width="40" className={styles.sliderIcon} /></button>
                 </div>
             </div>
         </main>
