@@ -1,6 +1,8 @@
 import * as React from "react";
 import Modal from 'react-modal';
 import { Link } from "react-router-dom";
+import { useState } from 'react';
+
 
 import styles from '../styles.module.css'
 import CustomButton from '../assets/components/CustomButton.js'
@@ -80,6 +82,49 @@ function Video() {
     }
   };
 
+  function idlePressed() {
+    console.log("Activate Video Conference Setup")
+
+    setidleState(true)
+    sethdmi1State(false)
+    sethdmi2State(false)
+    setclickshareState(false)
+  }
+
+  function hdmi1Pressed() {
+    console.log("Activate Video Conference Setup")
+
+    setidleState(false)
+    sethdmi1State(true)
+    sethdmi2State(false)
+    setclickshareState(false)
+  }
+
+  function hdmi2Pressed() {
+    console.log("Activate Video Conference Setup")
+
+    setidleState(false)
+    sethdmi1State(false)
+    sethdmi2State(true)
+    setclickshareState(false)
+  }
+
+  function clicksharePressed() {
+    console.log("Activate Video Conference Setup")
+
+    setidleState(false)
+    sethdmi1State(false)
+    sethdmi2State(false)
+    setclickshareState(true)
+  }
+
+  //TODO: Add Api Call to determine which one is active
+  const [idleState, setidleState] = useState(false);
+  const [hdmi1State, sethdmi1State] = useState(false);
+  const [hdmi2State, sethdmi2State] = useState(false);
+  const [clickshareState, setclickshareState] = useState(false);
+
+
   return (
     <main className={styles.wrapperVideoBackground}>
       <title>SoundSettings</title>
@@ -107,10 +152,10 @@ function Video() {
         </div>
 
         <div className={styles.buttonWrapper}>
-          <CustomButton active={true} icon={idleIcon} buttonName="Idle Mode" />
-          <CustomButton active={false} icon={hdmiIcon} buttonName="HDMI 1" />
-          <CustomButton active={false} icon={hdmiIcon} buttonName="HDMI 2" />
-          <CustomButton active={false} icon={clickshareIcon} buttonName="Clickshare" />
+          <CustomButton active={idleState} clickHandler={idlePressed} icon={idleIcon} buttonName="Idle Mode" />
+          <CustomButton active={hdmi1State} clickHandler={hdmi1Pressed} icon={hdmiIcon} buttonName="HDMI 1" />
+          <CustomButton active={hdmi2State} clickHandler={hdmi2Pressed} icon={hdmiIcon} buttonName="HDMI 2" />
+          <CustomButton active={clickshareState} clickHandler={clicksharePressed} icon={clickshareIcon} buttonName="Clickshare" />
         </div>
 
         <Modal
