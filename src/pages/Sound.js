@@ -1,8 +1,10 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 import styles from '../styles.module.css'
 import CustomButton from '../assets/components/CustomButton.js'
+import ButtonWithClickAnimation from '../assets/components/ButtonWithClickAnimationWithText.js'
 
 
 import arrowToGoBack from '../assets/icons/BackArrow.svg'
@@ -35,6 +37,13 @@ function Sound() {
         console.log("Make Api Call to Change Volume to: " + newSliderValue)
     };
 
+    const [ambientSounActivated, setAmbientSound] = useState(false)
+
+    function ambientSoundToggle(){
+        setAmbientSound(!ambientSounActivated);
+        console.log("make Api Call to toggle Ambient Sound")
+    }
+
     return (
         <main className={styles.wrapperSoundBackground}>
             <title>LightSettings</title>
@@ -42,8 +51,8 @@ function Sound() {
 
             <div className={styles.sliderPage}>
                 <div className={styles.buttonWrapper}>
-                    <CustomButton active={true} icon={soundIcon} buttonName="Ambient sound" />
-                    <CustomButton active={false} icon={telekomIcon} buttonName="Telekom gong" />
+                    <CustomButton active={ambientSounActivated} icon={soundIcon} clickHandler={ambientSoundToggle} buttonName="Ambient sound" />
+                    <ButtonWithClickAnimation icon={telekomIcon} buttonName="Telekom Gong" />
                 </div>
                 <div className={styles.sliderWrapper}>
                     <ThemeProvider theme={blackTheme}>
