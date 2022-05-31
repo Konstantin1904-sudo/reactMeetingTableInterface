@@ -2,6 +2,8 @@ import * as React from "react";
 import {Link} from "react-router-dom";
 
 import styles from '../styles.module.css'
+import CustomButton from '../assets/components/CustomButton.js'
+
 
 import arrowToGoBack from '../assets/icons/BackArrow.svg'
 import arrowUp from '../assets/icons/ArrowUpCircle.svg'

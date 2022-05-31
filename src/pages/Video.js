@@ -3,6 +3,8 @@ import Modal from 'react-modal';
 import { Link } from "react-router-dom";
 
 import styles from '../styles.module.css'
+import CustomButton from '../assets/components/CustomButton.js'
+
 
 import arrowToGoBack from '../assets/icons/BackArrow.svg'
 import webexLogo from '../assets/icons/Webex.svg'
@@ -40,7 +42,7 @@ function Video() {
     setFirstModalOpen(false);
   }
 
-//TODO: Add Api getWebexState for useState 
+  //TODO: Add Api getWebexState for useState 
   const [backgroundModalIsOpen, setBackgroundModalOpen] = React.useState(false);
 
   function openBackgroundModal() {
@@ -105,22 +107,10 @@ function Video() {
         </div>
 
         <div className={styles.buttonWrapper}>
-          <button className={styles.defaultButton}>
-            <img src={idleIcon} alt="Load failed" width="150" height="150" className={styles.buttonIcon} />
-            <span className={styles.buttonText}>Idle Mode</span>
-          </button>
-          <button className={styles.defaultButton}>
-            <img src={hdmiIcon} alt="Load failed" width="150" height="150" className={styles.buttonIcon} />
-            <span className={styles.buttonText}>HDMI 1</span>
-          </button>
-          <button className={styles.defaultButton}>
-            <img src={hdmiIcon} alt="Load failed" width="150" height="150" className={styles.buttonIcon} />
-            <span className={styles.buttonText}>HDMI 2</span>
-          </button>
-          <button className={styles.defaultButton}>
-            <img src={clickshareIcon} alt="Load failed" width="150" height="150" className={styles.buttonIcon} />
-            <span className={styles.buttonText}>Clickshare</span>
-          </button>
+          <CustomButton active={true} icon={idleIcon} buttonName="Idle Mode" />
+          <CustomButton active={false} icon={hdmiIcon} buttonName="HDMI 1" />
+          <CustomButton active={false} icon={hdmiIcon} buttonName="HDMI 2" />
+          <CustomButton active={false} icon={clickshareIcon} buttonName="Clickshare" />
         </div>
 
         <Modal
