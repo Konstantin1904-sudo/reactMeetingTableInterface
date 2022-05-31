@@ -40,11 +40,31 @@ function Light() {
     function workingAndMeetingPressed(){
         console.log("Activate Working and Meeting Preset")
 
-        setWorkingAndMeetingState('activeButton')
+        setWorkingAndMeetingState(true)
+        setvideoConferenceState(false)
+        setMovieSetupState(false)
     }
 
+    function videoConferencePressed(){
+        console.log("Activate Video Conference Setup")
 
-    const [workingAndMeetingState, setWorkingAndMeetingState] = useState('defaultButton');
+        setWorkingAndMeetingState(false)
+        setvideoConferenceState(true)
+        setMovieSetupState(false)
+    }
+
+    function movieSetupPressed(){
+        console.log("Activate Video Conference Setup")
+
+        setWorkingAndMeetingState(false)
+        setvideoConferenceState(false)
+        setMovieSetupState(true)
+    }
+
+//TODO: Add Api Call to determine which one is active
+    const [workingAndMeetingState, setWorkingAndMeetingState] = useState(false);
+    const [videoConferenceState, setvideoConferenceState] = useState(false);
+    const [movieSetupState, setMovieSetupState] = useState(false);
 
 
 
@@ -56,9 +76,9 @@ function Light() {
 
             <div className={styles.sliderPage}>
                 <div className={styles.buttonWrapper}>
-                    <CustomButton active={true} icon={lowIcon} buttonName="Working & Meeting"/>
-                    <CustomButton active={false} icon={mediumIcon} buttonName="Video conference"/>
-                    <CustomButton active={false} icon={highIcon} buttonName="Movie setup"/>
+                    <CustomButton active={workingAndMeetingState} clickHandler={workingAndMeetingPressed} icon={lowIcon} buttonName="Working & Meeting"/>
+                    <CustomButton active={videoConferenceState} clickHandler={videoConferencePressed} icon={mediumIcon} buttonName="Video conference"/>
+                    <CustomButton active={movieSetupState} clickHandler={movieSetupPressed} icon={highIcon} buttonName="Movie setup"/>
                 </div>
                 <div className={styles.sliderWrapper}>
                     <ThemeProvider theme={greenTheme}>
