@@ -5,6 +5,8 @@ import { useState } from 'react';
 
 
 import styles from '../styles.module.css'
+import modalStyles from '../assets/styles/modalStyles.module.css'
+
 import CustomButton from '../assets/components/CustomButton.js'
 
 
@@ -163,7 +165,7 @@ function Video() {
           onRequestClose={closeBackgroundModal}
           contentLabel="Background Modal"
           ariaHideApp={false}
-          className={styles.modalBackground}
+          className={modalStyles.modalBackground}
         >
         </Modal>
         <Modal
@@ -171,16 +173,16 @@ function Video() {
           onRequestClose={closeFirstModal}
           contentLabel="Help Modal 1"
           ariaHideApp={false}
-          className={styles.modalStyling}
+          className={modalStyles.modalStyling}
         >
 
-          <div className={styles.modalTextWrapper}>
-            <div className={styles.modalTextBlue}>To share your screen you need to switch to hdmi input and use the webex tablet.</div>
+          <div className={modalStyles.modalTextWrapper}>
+            <div className={modalStyles.modalTextBlue}>To share your screen you need to switch to hdmi input and use the webex tablet.</div>
           </div>
 
-          <div className={styles.modalButtonWrapper}>
+          <div className={modalStyles.modalButtonWrapper}>
 
-            <button onClick={closeAllModals} className={styles.modalButtonBlue}>Okay</button>
+            <button onClick={closeAllModals} className={modalStyles.modalButtonBlue}>Okay</button>
 
           </div>
 

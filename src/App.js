@@ -4,6 +4,8 @@ import Modal from 'react-modal';
 
 
 import styles from './/styles.module.css'
+import buttonStyles from './assets/styles/buttonStyles.module.css'
+import modalStyles from './assets/styles/modalStyles.module.css'
 
 import lightButton from './assets/welcomePageButtons/LightButton.svg'
 import videoButton from './assets/welcomePageButtons/VideoButton.svg'
@@ -101,14 +103,14 @@ function Home() {
           <Link to="/sound" className={styles.welcomeButton}><img src={soundButton} alt={'Sound Button'} /></Link>
           <Link to="/blinds" className={styles.welcomeButton}><img src={blindsButton} alt={'Blinds Button'} /></Link>
 
-          <button className={styles.defaultButton} onClick={startModalDialogue}><img src={helpbutton} alt={'helpButton'} className={styles.welcomeHelp} /></button>
+          <button className={buttonStyles.defaultButton} onClick={startModalDialogue}><img src={helpbutton} alt={'helpButton'} className={styles.welcomeHelp} /></button>
 
           <Modal
             isOpen={backgroundModalIsOpen}
             onRequestClose={closeBackgroundModal}
             contentLabel="Background Modal"
             ariaHideApp={false}
-            className={styles.modalBackground}
+            className={modalStyles.modalBackground}
           >
           </Modal>
           <Modal
@@ -116,19 +118,19 @@ function Home() {
             onRequestClose={closeFirstModal}
             contentLabel="Help Modal 1"
             ariaHideApp={false}
-            className={styles.modalStyling}
+            className={modalStyles.modalStyling}
           >
 
-            <div className={styles.modalTextWrapper}>
-              <div className={styles.modalText}>Do you need help from a member of the technical team?</div>
-              <div className={styles.modalSmallText}>Brauchen Sie Hilfe von einem Mitarbeiter aus dem technischen Team?</div>
+            <div className={modalStyles.modalTextWrapper}>
+              <div className={modalStyles.modalText}>Do you need help from a member of the technical team?</div>
+              <div className={modalStyles.modalSmallText}>Brauchen Sie Hilfe von einem Mitarbeiter aus dem technischen Team?</div>
 
             </div>
 
-            <div className={styles.modalButtonWrapper}>
+            <div className={modalStyles.modalButtonWrapper}>
 
-              <button onClick={handleNeedHelp} className={styles.modalButtonPrimary}>Yes</button>
-              <button onClick={closeAllModals} className={styles.modalButtonSecondary}>No</button>
+              <button onClick={handleNeedHelp} className={modalStyles.modalButtonPrimary}>Yes</button>
+              <button onClick={closeAllModals} className={modalStyles.modalButtonSecondary}>No</button>
 
             </div>
 
@@ -139,18 +141,18 @@ function Home() {
             onRequestClose={closeSecondModal}
             contentLabel="Help Modal 1"
             ariaHideApp={false}
-            className={styles.modalStyling}
+            className={modalStyles.modalStyling}
           >
 
-            <div className={styles.modalTextWrapper}>
-              <div className={styles.modalText}>A member of the technical team will be with you shortly.</div>
-              <div className={styles.modalSmallText}>Ein Mitarbeiter aus dem technischen Team wird in Kürze bei Ihnen sein.</div>
+            <div className={modalStyles.modalTextWrapper}>
+              <div className={modalStyles.modalText}>A member of the technical team will be with you shortly.</div>
+              <div className={modalStyles.modalSmallText}>Ein Mitarbeiter aus dem technischen Team wird in Kürze bei Ihnen sein.</div>
 
             </div>
 
-            <div className={styles.modalButtonWrapper}>
+            <div className={modalStyles.modalButtonWrapper}>
 
-              <button onClick={closeAllModals} className={styles.modalButtonPrimary}>Okay</button>
+              <button onClick={closeAllModals} className={modalStyles.modalButtonPrimary}>Okay</button>
 
             </div>
 

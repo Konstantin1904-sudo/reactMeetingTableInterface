@@ -1,0 +1,27 @@
+
+.sliderWrapper{
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    transform: scale(2);
+
+
+}
+.sliderButton{
+
+    border: none;
+
+    background-color: transparent;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+}

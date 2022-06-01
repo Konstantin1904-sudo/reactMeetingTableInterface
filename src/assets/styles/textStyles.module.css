@@ -1,0 +1,17 @@
+
+@font-face {
+    font-familiy: teleNeo;
+    src: url(https://www.brand-design.telekom.com/asset/font-0-teleneo/);
+}
+
+
+
+
+.defaultText{
+    font-familiy: teleNeo;
+
+    font-size: 50px;
+
+    padding: 30px;
+
+}

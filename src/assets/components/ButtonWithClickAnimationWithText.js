@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from 'react';
 
-import styles from '../../styles.module.css'
+import buttonStyles from '../styles/buttonStyles.module.css'
 
 
 function ButtonWithClickAnimation(props) {
@@ -11,7 +11,6 @@ function ButtonWithClickAnimation(props) {
     const [animate, setAnimate] = useState(false);
 
     const onClickAnimation = () => {
-        console.log("animate triggered")
         setAnimate(true);
         setTimeout(() => setAnimate(false), 700);
 
@@ -20,17 +19,17 @@ function ButtonWithClickAnimation(props) {
     if (!animate) {
 
         return (
-            <button className={styles.defaultButton} onClick={onClickAnimation}>
-                <img src={props.icon} alt="Load failed" width={props.width} height={props.height} className={styles.buttonIcon} />
-                <span className={styles.buttonText}>{props.buttonName}</span>
+            <button className={buttonStyles.defaultButton} onClick={() => {onClickAnimation(); props.clickHandler()}}>
+                <img src={props.icon} alt="Load failed" width={props.width} height={props.height} className={buttonStyles.buttonIcon} />
+                <span className={buttonStyles.buttonText}>{props.buttonName}</span>
             </button>
         )
     } else {
         return (
 
-            <button className={styles.defaultButton} onClick={onClickAnimation}>
-                <img src={props.icon} alt="Load failed" width={props.width} height={props.height} className={styles.activeButtonIcon} />
-                <span className={styles.activeButtonText}>{props.buttonName}</span>
+            <button className={buttonStyles.defaultButton} onClick={() => {onClickAnimation(); props.clickHandler()}}>
+                <img src={props.icon} alt="Load failed" width={props.width} height={props.height} className={buttonStyles.activeButtonIcon} />
+                <span className={buttonStyles.activeButtonText}>{props.buttonName}</span>
             </button>
         )
     }

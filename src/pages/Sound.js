@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 
 import styles from '../styles.module.css'
+import sliderStyles from '../assets/styles/sliderStyles.module.css'
 import CustomButton from '../assets/components/CustomButton.js'
-import ButtonWithClickAnimation from '../assets/components/ButtonWithClickAnimationWithText.js'
+import ButtonWithClickAnimationAndText from '../assets/components/ButtonWithClickAnimationWithText.js'
 
 
 import arrowToGoBack from '../assets/icons/BackArrow.svg'
@@ -50,6 +51,10 @@ function Sound() {
         setSliderValue(0);
     }
 
+    function activateTelekomGong(){
+        console.log("Api call to activate the Telekom Gong")
+    }
+
     return (
         <main className={styles.wrapperSoundBackground}>
             <title>LightSettings</title>
@@ -58,9 +63,9 @@ function Sound() {
             <div className={styles.sliderPage}>
                 <div className={styles.buttonWrapper}>
                     <CustomButton active={ambientSounActivated} icon={soundIcon} clickHandler={ambientSoundToggle} buttonName="Ambient sound" />
-                    <ButtonWithClickAnimation icon={telekomIcon} buttonName="Telekom Gong" />
+                    <ButtonWithClickAnimationAndText clickHandler={activateTelekomGong}icon={telekomIcon} buttonName="Telekom Gong" />
                 </div>
-                <div className={styles.sliderWrapper}>
+                <div className={sliderStyles.sliderWrapper}>
                     <ThemeProvider theme={blackTheme}>
                         <Slider
                             color='primary'
@@ -71,7 +76,7 @@ function Sound() {
                             onChange={handleSliderChange}
                         />
                     </ThemeProvider>
-                    <button className={styles.sliderButton} onClick={muteButtonPressed}><img src={muteIcon} alt="Load failed" width="40" className={styles.sliderIcon} /></button>
+                    <button className={sliderStyles.sliderButton} onClick={muteButtonPressed}><img src={muteIcon} alt="Load failed" width="40" className={styles.sliderIcon} /></button>
                 </div>
             </div>
         </main>

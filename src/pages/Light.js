@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 
 import styles from '../styles.module.css'
+import sliderStyles from '../assets/styles/sliderStyles.module.css'
 
 import CustomButton from '../assets/components/CustomButton.js'
 
@@ -80,7 +81,7 @@ function Light() {
                     <CustomButton active={videoConferenceState} clickHandler={videoConferencePressed} icon={mediumIcon} buttonName="Video conference"/>
                     <CustomButton active={movieSetupState} clickHandler={movieSetupPressed} icon={highIcon} buttonName="Movie setup"/>
                 </div>
-                <div className={styles.sliderWrapper}>
+                <div className={sliderStyles.sliderWrapper}>
                     <ThemeProvider theme={greenTheme}>
                         <Slider
                             color='primary'
@@ -91,7 +92,7 @@ function Light() {
                             onChange={handleSliderChange}
                         />
                     </ThemeProvider>
-                    <img src={brightnessIcon} alt="Load failed" width="80" className={styles.sliderIcon} />
+                    <img src={brightnessIcon} alt="Load failed" width="80" className={sliderStyles.sliderIcon} />
                 </div>
             </div>
         </main>

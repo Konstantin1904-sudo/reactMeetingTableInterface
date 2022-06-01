@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from 'react';
 
-import buttonStyles from '../../buttonStyle.module.css'
+import buttonStyles from '../styles/buttonStyles.module.css'
 
 
 function ButtonWithClickAnimation(props) {
