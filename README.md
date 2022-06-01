@@ -13,6 +13,15 @@ Um den Development Modus zu starten:
 npm start dev
 ```
 
+Um das Interface auf einem anderen (Mobil) Gerät sehen zu können:
+    Eigene IP Addresse herausfinden mit:
+    ```
+    ifconfig
+    ```
+    unter dem Punkt en0 befindet sich die IP Adresse
+    
+    Dann die IP Adresse + :3000 im Browser eingeben. 
+
 Dieses Projekt soll ein einfach zu bedienendes Interface für einen Meeting Tisch sein.
 
 Die Enthaltenen Frameworks sind:
