@@ -18,6 +18,7 @@ Um das Interface auf einem anderen (Mobil) Gerät sehen zu können:
     ```
     ifconfig
     ```
+    
     unter dem Punkt en0 befindet sich die IP Adresse
     
     Dann die IP Adresse + :3000 im Browser eingeben. 
