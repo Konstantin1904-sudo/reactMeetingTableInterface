@@ -1,17 +1,17 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Modal from 'react-modal';
-
 
 import styles from './/styles.module.css'
 import buttonStyles from './assets/styles/buttonStyles.module.css'
 import modalStyles from './assets/styles/modalStyles.module.css'
 
-import lightButton from './assets/welcomePageButtons/LightButton.svg'
-import videoButton from './assets/welcomePageButtons/VideoButton.svg'
-import soundButton from './assets/welcomePageButtons/SoundButton.svg'
-import blindsButton from './assets/welcomePageButtons/BlindsButton.svg'
 import helpbutton from './assets/welcomePageButtons/HelpButton.svg'
+
+import lightIcon from './assets/icons/CeilingLamp.svg'
+import videoIcon from './assets/icons/Screen.svg'
+import soundIcon from './assets/icons/Sound.svg'
+import blindsIcon from './assets/icons/Blinds.svg'
 
 import Light from './pages/Light.js'
 import Sound from './pages/Sound.js'
@@ -23,6 +23,13 @@ import Blinds from './pages/Blinds.js'
 
 
 function App() {
+
+  
+
+
+  // useEffect(() => {
+  //   document.body.style.overflow = "hidden";
+  // }, []);
 
   return (
     <div className="App">
@@ -98,10 +105,11 @@ function Home() {
 
         <div className={styles.welcomeWrapper}>
 
-          <Link to="/light" className={styles.welcomeButton}><img src={lightButton} alt={'Light Button'} /></Link>
-          <Link to="/video" className={styles.welcomeButton}><img src={videoButton} alt={'Video Button'} /></Link>
-          <Link to="/sound" className={styles.welcomeButton}><img src={soundButton} alt={'Sound Button'} /></Link>
-          <Link to="/blinds" className={styles.welcomeButton}><img src={blindsButton} alt={'Blinds Button'} /></Link>
+          <Link to="/light" className={styles.welcomeButtonLight}> <img src={lightIcon} className={styles.welcomeButtonIcon} alt={'Light Icon'}/> Light </Link>
+          <Link to="/video" className={styles.welcomeButtonVideo}> <img src={videoIcon} className={styles.welcomeButtonIcon} alt={'Video Icon'}/> Video </Link>
+          <Link to="/sound" className={styles.welcomeButtonSound}> <img src={soundIcon} className={styles.welcomeButtonIcon} alt={'Sound Icon'}/> Sound </Link>
+          <Link to="/blinds" className={styles.welcomeButtonBlinds}> <img src={blindsIcon} className={styles.welcomeButtonIcon} alt={'Blinds Icon'}/> Blinds </Link>
+
 
           <button className={buttonStyles.defaultButton} onClick={startModalDialogue}><img src={helpbutton} alt={'helpButton'} className={styles.welcomeHelp} /></button>
 
@@ -123,7 +131,7 @@ function Home() {
 
             <div className={modalStyles.modalTextWrapper}>
               <div className={modalStyles.modalText}>Do you need help from a member of the technical team?</div>
-              <div className={modalStyles.modalSmallText}>Brauchen Sie Hilfe von einem Mitarbeiter aus dem technischen Team?</div>
+              <div className={modalStyles.modalText}>Brauchen Sie Hilfe von einem Mitarbeiter aus dem technischen Team?</div>
 
             </div>
 

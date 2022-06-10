@@ -14,8 +14,8 @@
     align-content: space-evenly;
 
 
-    height: 100vh;
-    width: 100vw;
+    height: 1752px;
+    width: 2800px;
 
     padding-top: 0;
 }
@@ -23,6 +23,9 @@
 .welcomeButton{
 
     display: flex;
+    flex-direction: column;
+
+    align-items: center;
 
     flex-grow: 0;
     height: var(--welcomeHeight);
@@ -31,11 +34,145 @@
     align-self: center;
     justify-self: center;
 
+    font-familiy: teleNeo;
+    font-size: 80px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.welcomeButtonLight{
+
+    position: fixed;
+    top: -5%;
+    left: 15%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 0;
+
+    align-self: center;
+    justify-self: center;
+
+    font-familiy: teleNeo;
+    font-size: 110px;
+    text-decoration: none;
+    color: black;
+
+    background-color: #92CFCA;
+
+    width: 900px;
+    height: 900px;
+
+    border-radius: 100%;
+}
+
+.welcomeButtonVideo{
+
+    position: fixed;
+    top: 5%;
+    right: 10%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex-grow: 0;
+
+    align-self: center;
+    justify-self: center;
+
+    font-familiy: teleNeo;
+    font-size: 110px;
+    text-decoration: none;
+    color: black;
+
+    background-color: #76B2E2;
+
+    width: 1000px;
+    height: 700px;
+
+    border-radius: 10%;
+}
+
+.welcomeButtonSound{
+
+    position: fixed;
+    bottom: 5%;
+    left: 10%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex-grow: 0;
+
+    align-self: center;
+    justify-self: center;
+
+    font-familiy: teleNeo;
+    font-size: 110px;
+    text-decoration: none;
+    color: black;
+
+    background-color: #706EAD;
+
+    width: 1000px;
+    height: 700px;
+
+    border-radius: 10%;
+}
+
+.welcomeButtonBlinds{
+
+    position: fixed;
+    bottom: -5%;
+    right: 10%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    
+    flex-grow: 0;
+
+    align-self: center;
+    justify-self: center;
+
+    font-familiy: teleNeo;
+    font-size: 110px;
+    text-decoration: none;
+    color: black;
+
+    background-color: #FFEBB6;
+
+    width: 1000px;
+    height: 1000px;
+
+    border-radius: 100%;
+}
+
+.welcomeButtonIcon{
+    width: 400px;
+    height: 400px;
 }
 
 .welcomeHelp{
     height: 200px;
     width: 200px;
+
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
 }
 
 
@@ -49,8 +186,9 @@
 
     align-items: center;
 
-    width: 100vw;
+    width: 100%;
     height: 1300px;
+
 
 }
 
@@ -60,7 +198,7 @@
     justify-content: space-evenly;
     align-items: center;
 
-    width: 100vw;
+    width: 100;
     height: 1300px;
 
     flex-direction: column;
@@ -74,7 +212,7 @@
     align-content: center;
     justify-content: space-evenly;
 
-    width: 100vw;
+    width: 100;
     height: 1500px;
 
 }
@@ -116,7 +254,7 @@
 }
 
 .switchButton{
-    transform: scale(3);
+    transform: scale(4);
 
     padding-right: 20px;
 
@@ -125,7 +263,7 @@
 /* Text Styling */
 
 @font-face {
-    font-familiy: teleNeo;
+    font-failiy: teleNeo;
     src: url(https://www.brand-design.telekom.com/asset/font-0-teleneo/);
 }
 
@@ -175,9 +313,9 @@
     background-repeat: no-repeat;
     background-size: cover;
    
-    /* making it 100% of the total width and height */ 
-    height: 100vh;
-    width: 100vw;
+    height: 1752px;
+    width: 2800px;
+
 
 }
 
@@ -188,9 +326,8 @@
     background-repeat: no-repeat;
     background-size: cover;
    
-    /* making it 100% of the total width and height */ 
-    height: 100vh;
-    width: 100vw;
+    height: 1752px;
+    width: 2800px;
 
 }
 
@@ -201,10 +338,8 @@
     background-repeat: no-repeat;
     background-size: cover;
    
-    /* making it 100% of the total width and height */ 
-    height: 100vh;
-    width: 100vw;
-
+    height: 1752px;
+    width: 2800px;
 }
 
 .wrapperBlindsBackground{
@@ -214,8 +349,7 @@
     background-repeat: no-repeat;
     background-size: cover;
    
-    /* making it 100% of the total width and height */ 
-    height: 100vh;
-    width: 100vw;
+    height: 1752px;
+    width: 2800px;
 
 }
