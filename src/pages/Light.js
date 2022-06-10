@@ -23,7 +23,7 @@ const greenTheme = createTheme({
     },
     palette: {
         primary: {
-            main: '#98CA97',
+            main: '#92CFCA',
         }
     },
 });

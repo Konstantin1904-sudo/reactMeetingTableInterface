@@ -28,9 +28,9 @@ function Blinds() {
             <title>SoundSettings</title>
             <Link to="/"><img src={arrowToGoBack} alt="Load failed" width="100" height="100" className={styles.arrow} /></Link>
             <div className={styles.blindsWrapper}>
-                <ButtonWithClickAnimation clickHandler={blindsUp} icon={arrowUp} width={300} height={300}/>
-                <ButtonWithClickAnimation clickHandler={blindsStop} icon={minus} width={300} height={300}/>
-                <ButtonWithClickAnimation clickHandler={blindsDown} icon={arrowDown} width={300} height={300}/>
+                <ButtonWithClickAnimation clickHandler={blindsUp} icon={arrowUp} />
+                <ButtonWithClickAnimation clickHandler={blindsStop} icon={minus}/>
+                <ButtonWithClickAnimation clickHandler={blindsDown} icon={arrowDown}/>
             </div>
         </main>
     )
