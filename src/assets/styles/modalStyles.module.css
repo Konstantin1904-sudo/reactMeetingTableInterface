@@ -41,7 +41,7 @@
 .modalText{
     font-familiy: teleNeo;
 
-    font-size: 50px;
+    font-size: 45px;
 
     padding: 30px;
     text-align: center;
@@ -99,7 +99,7 @@
 }
 
 .modalTextBlue{
-    color: #74A7D0;
+    color: #76B2E2;
     font-familiy: teleNeo;
 
     font-size: 50px;
@@ -110,7 +110,7 @@
 
 .modalButtonBlue{
     font-family: teleNeo;
-    background-color: #74A7D0;
+    background-color: #76B2E2;
     border: none;
     font-size: 70px;
     color: white;
