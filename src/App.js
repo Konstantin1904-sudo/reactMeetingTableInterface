@@ -154,7 +154,7 @@ function Home() {
 
             <div className={modalStyles.modalTextWrapper}>
               <div className={modalStyles.modalText}>A member of the technical team will be with you shortly.</div>
-              <div className={modalStyles.modalSmallText}>Ein Mitarbeiter aus dem technischen Team wird in Kürze bei Ihnen sein.</div>
+              <div className={modalStyles.modalText}>Ein Mitarbeiter aus dem technischen Team wird in Kürze bei Ihnen sein.</div>
 
             </div>
 
